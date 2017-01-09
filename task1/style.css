@@ -39,3 +39,51 @@ ul > li img {
 }
 
 /* Вашият CSS от тук надолу */
+
+
+li img {
+    width: 100px;
+    display:flex;
+}
+
+
+@media all and (max-width: 1000px) {
+    ul > li {
+        width: calc(100%/3);
+    }
+}
+
+@media all and (max-width: 600px) {
+    ul > li {
+        width: calc(100%/2);
+    }
+}
+
+@media all and (max-width: 400px) {
+    ul > li {
+        width: calc(100%/1);
+    }
+}
+
+
+#subtask2
+li:nth-child(even) {
+    background-color: lightblue;
+}
+
+
+#subtask3
+ul li img:hover {
+   -webkit-transform: rotate(180deg);
+
+ -webkit-transition:  1s ease-in-out;
+}
+#subtask3
+ul li:hover {
+    background-color: lightblue;
+}
+#subtask4
+li::after { content: ""; position: absolute; }
+
+#subtask5
+li::after { content: "-IMAGINE THAT!"; position: fixed; }
